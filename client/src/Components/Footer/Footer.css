@@ -29,3 +29,7 @@
   color: white;
   margin-bottom: 20px;
 }
+
+#orders {
+  cursor: pointer;
+}

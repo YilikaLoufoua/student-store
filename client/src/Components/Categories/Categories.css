@@ -85,3 +85,10 @@
 
   cursor: pointer;
 }
+
+.poster {
+  display: flex;
+  padding: 3rem 0 0 0;
+  margin: 1rem 0;
+  background: #02c385;
+}

@@ -15,7 +15,7 @@ export default function Product({ product, addCart, removeCart }) {
           src={product.image}
           alt="product cover"
           onClick={() => {
-            navigate("/" + product.id);
+            navigate("/products/" + product.id);
           }}
         />
       </div>
@@ -29,8 +29,7 @@ export default function Product({ product, addCart, removeCart }) {
             <StarRateIcon />
             <StarHalfIcon />
           </span>
-
-          <p className="product-price">{product.price}</p>
+          <p className="product-price">${product.price}</p>
         </div>
         <div className="actions">
           <div className="buttons">

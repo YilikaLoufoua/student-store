@@ -4,6 +4,8 @@ import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 import Categories from "../Categories/Categories";
 import ProductPage from "../ProductPage/ProductPage";
+import OrderPage from "../OrderPage/OrderPage";
+import OrderDetail from "../OrderDetail/OrderDetail";
 import { useEffect, useState } from "react";
 import Footer from "../Footer/Footer";
 import axios from "axios";
@@ -17,6 +19,7 @@ function Mainpage() {
   let [cart, setCart] = useState([]);
   let [allProducts, setAllProducts] = useState(undefined);
   let navigate = useNavigate();
+
   function addCart(item) {
     for (let i = 0; i < cart.length; i++) {
       if (cart[i].id == item.id) {
@@ -28,6 +31,7 @@ function Mainpage() {
     item.quantity = 1;
     setCart((cart) => [...cart, item]);
   }
+
   function removeCart(item) {
     for (let i = 0; i < cart.length; i++) {
       if (cart[i].id == item.id) {
@@ -45,21 +49,12 @@ function Mainpage() {
 
   async function getData() {
     setLoading(true);
-    axios.get("http://localhost:3001/store").then((data) => {
+    axios.get("http://localhost:3001/store/products").then((data) => {
       setAllProducts(data.data.products);
       setProducts(data.data.products);
     });
   }
-  function filterProducts() {
-    if (active === "All Categories") {
-      setProducts(allProducts);
-      return;
-    }
-    let products = allProducts.filter((item, index) => {
-      return item.category.toLowerCase() === active.toLowerCase();
-    });
-    setProducts(products);
-  }
+
   useEffect(() => {
     const setup = async () => {
       await getData();
@@ -74,8 +69,18 @@ function Mainpage() {
   }, [products]);
 
   useEffect(() => {
+    function filterProducts() {
+      if (active === "All Categories") {
+        setProducts(allProducts);
+        return;
+      }
+      let products = allProducts.filter((item, index) => {
+        return item.category.toLowerCase() === active.toLowerCase();
+      });
+      setProducts(products);
+    }
     filterProducts();
-  }, [active]);
+  }, [active, allProducts]);
 
   if (!loading) {
     let mainpage = (
@@ -91,19 +96,40 @@ function Mainpage() {
         <Footer />
       </div>
     );
+
     let productPage = (
       <div>
         <Sidebar open={open} setOpen={setOpen} setCart={setCart} cart={cart} />
         <Navbar setOpen={setOpen} />
-        <ProductPage />
+        <ProductPage addCart={addCart} removeCart={removeCart}/>
       </div>
     );
+
+    let orderPage = (
+      <div>
+        <Sidebar open={open} setOpen={setOpen} setCart={setCart} cart={cart} />
+        <Navbar setOpen={setOpen} />
+        <OrderPage/>
+      </div>
+    )
+
+    let orderDetail = (
+      <div>
+        <Sidebar open={open} setOpen={setOpen} setCart={setCart} cart={cart} />
+        <Navbar setOpen={setOpen} />
+        <OrderDetail/>
+      </div>
+    )
+
     return (
       <Routes>
-        <Route path="/:id" element={productPage} />
+        <Route path="/products/:id" element={productPage} />
+        <Route path="/orders" element={orderPage} />
+        <Route path="/orders/:id" element={orderDetail} />
         <Route path="*" element={mainpage} />
       </Routes>
     );
+    
   } else {
     return;
   }

@@ -2,29 +2,28 @@ import React from "react";
 
 import "./Subnav.css";
 import SearchIcon from "@mui/icons-material/Search";
-import HelpIcon from "@mui/icons-material/Help";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
 export default function Subnav() {
   return (
-    <div class="wrap">
-      <div class="row">
-        <div class="searchbar">
+    <div className="wrap">
+      <div className="row">
+        <div className="searchbar">
           <input id="search" placeholder="Search..." />
           <SearchIcon
             sx={{ color: "white", fontSize: 52, background: "#02C385" }}
           />
         </div>
-        <div class="cart">
+        <div className="cart">
           <h3 style={{ color: "white" }}>My Cart</h3>
           <ShoppingCartIcon sx={{ color: "white", fontSize: 52 }} />
         </div>
       </div>
 
-      <div class="row">
+      <div className="row">
         <MenuIcon sx={{ fontSize: 40, color: "gray" }} />
 
-        <div class="menu">
+        <div className="menu">
           <li>
             <button>All Categories</button>
           </li>

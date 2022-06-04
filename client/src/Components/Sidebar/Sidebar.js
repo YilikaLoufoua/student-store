@@ -28,12 +28,12 @@ export default function Sidebar({ cart, setCart, open, setOpen }) {
   }
 
   let closed = (
-    <div class="sidebar">
-      <div class="content">
-        <button class="transparent" onClick={() => setOpen(true)}>
+    <div className="sidebar">
+      <div className="content">
+        <button className="transparent" onClick={() => setOpen(true)}>
           <ArrowForwardIcon sx={{ color: "white", fontSize: 50 }} />
         </button>
-        <div class="icons">
+        <div className="icons">
           <AddShoppingCartIcon sx={{ color: "white", fontSize: 50 }} />
           <MonetizationOnIcon sx={{ color: "white", fontSize: 50 }} />
           <FactCheckIcon sx={{ color: "white", fontSize: 50 }} />
@@ -43,7 +43,7 @@ export default function Sidebar({ cart, setCart, open, setOpen }) {
   );
   let cartList = (
     <div id="cart-table">
-      <div class="cart-sectt">
+      <div className="cart-sectt">
         <h2>Name</h2>
         <h2>Quantity</h2>
         <h2>Unit Price</h2>
@@ -52,7 +52,7 @@ export default function Sidebar({ cart, setCart, open, setOpen }) {
       {cart.map((item, index) => {
         let cost = (item.quantity * item.price).toFixed(2);
         return (
-          <div class="cart-sect">
+          <div className="cart-sect">
             <p>{item.name}</p>
             <p>{item.quantity}</p>
             <p>${item.price}</p>
@@ -66,20 +66,20 @@ export default function Sidebar({ cart, setCart, open, setOpen }) {
     cartList = <div></div>;
   }
   let opened = (
-    <div class="sidebar-open">
-      <div class="full">
-        <button class="transparent" onClick={() => setOpen(false)}>
+    <div className="sidebar-open">
+      <div className="full">
+        <button className="transparent" onClick={() => setOpen(false)}>
           <ArrowBackIcon sx={{ color: "white", fontSize: 50 }} />
         </button>
 
-        <div class="icons">
-          <div class="inline">
+        <div className="icons">
+          <div className="inline">
             <h2>Shopping Cart</h2>
             <AddShoppingCartIcon sx={{ color: "white", fontSize: 50 }} />
           </div>
           {cartList}
           <p>No items added to cart yet. Start shopping now!</p>
-          <div class="inline">
+          <div className="inline">
             <h2>Payment Info</h2>
             <MonetizationOnIcon sx={{ color: "white", fontSize: 50 }} />
           </div>
@@ -90,27 +90,27 @@ export default function Sidebar({ cart, setCart, open, setOpen }) {
             <br />
             <p>Email</p>
             <br />
-            <input id="email" placeholder="Email" />
+            <input id="email" type="email" placeholder="Email" />
 
-            <div class="inlines">
+            <div className="inlines">
               <input id="check" type="checkbox" />
-              <span class="terms">
+              <span className="terms">
                 I agree to the{" "}
-                <span class="terms" style={{ color: "#02c385" }}>
+                <span className="terms" style={{ color: "#02c385" }}>
                   terms and conditions
                 </span>
               </span>
             </div>
 
-            <button class="submitButton">Submit</button>
+            <button className="submitButton">Submit</button>
           </form>
 
-          <div class="inline">
+          <div className="inline">
             <h2>Checkout Info </h2>
             <FactCheckIcon sx={{ color: "white", fontSize: 50 }} />
             <br></br>
           </div>
-          <div class="conf">
+          <div className="conf">
             <p>
               A confirmation email will be sent to you so that you can confirm
               this order. Once you have confirmed the order, it will be

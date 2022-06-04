@@ -1,5 +1,6 @@
 const { BadRequestError, NotFoundError } = require("../utils/errors");
 const { storage } = require("../data/storage");
+const { v4: uuidv4 } = require('uuid');
 
 const formatter = new Intl.NumberFormat("en-US", {
   currency: "USD",
@@ -12,8 +13,13 @@ const formatPrice = (amount) => {
 };
 
 class Store {
+
   static async listProducts() {
     return storage.get("products").value();
+  }
+
+  static async listOrders() {
+    return storage.get("orders").value();
   }
 
   static async fetchProductById(productId) {
@@ -23,8 +29,21 @@ class Store {
       .value();
 
     if (product) return product;
+    
 
     throw new NotFoundError("No product found with that id.");
+  }
+
+  static async fetchOrderById(orderId) {
+    const order = storage
+      .get("orders")
+      .find({ id: orderId })
+      .value();
+
+    if (order) return order;
+    
+
+    throw new NotFoundError("No order found with that id.");
   }
 
   static async purchaseProducts(cart, userInfo) {
@@ -46,23 +65,19 @@ class Store {
       userInfo,
     });
 
-    const purchase = {
+    const order = {
+      id: uuidv4(),
       name: userInfo.name,
       email: userInfo.email,
       total,
       receipt,
     };
 
-    storage.get("purchases").push(purchase).write();
+    storage.get("orders").push(order).write();
 
-    return purchase;
+    return order;
   }
 
-  /**
-   * Method that calculates the total cost of all items in the cart, before tax
-   *
-   * @returns number
-   */
   static calculateSubtotal(cart, products) {
     const productsMapping = products.reduce((acc, product) => {
       acc[product.name] = product;
@@ -78,7 +93,6 @@ class Store {
       }
 
       const product = productsMapping[cart[productName].name];
-
       const quantity = cart[productName].quantity;
       const productSubtotal = quantity * product.price;
       subtotal += productSubtotal;

@@ -3,12 +3,6 @@
   margin: 0 auto;
   padding: 0;
 }
-.poster {
-  display: flex;
-  padding: 4rem 0 0 0;
-  margin: 3rem 0;
-  background: #02c385;
-}
 
 .text {
   padding: 0 3rem;

@@ -145,5 +145,302 @@
       "price": 999.99
     }
   ],
-  "purchases": []
+  "orders": [
+    {
+      "id": "a6985e96-3866-4995-9062-22914683bf0c",
+      "name": "Yilika Loufoua",
+      "email": "yilikaloufoua@gmail.com",
+      "total": 3.251625,
+      "receipt": {
+        "userInfo": {
+          "email": "yilikaloufoua@gmail.com",
+          "name": "Yilika Loufoua"
+        },
+        "lines": [
+          "Showing receipt for Yilika Loufoua available at yilikaloufoua@gmail.com:",
+          "1 total Cinnamon Rolls purchased at a cost of $2.99 for a total cost of $2.99.",
+          "Before taxes, the subtotal was $2.99",
+          "After taxes and fees were applied, the total comes out to $3.25"
+        ],
+        "productRows": [
+          {
+            "id": 3,
+            "name": "Cinnamon Rolls",
+            "category": "food",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Johns_Inc_Cinnamon_Rolls.jpg",
+            "source": "https://en.wikipedia.org/wiki/File:Johns_Inc_Cinnamon_Rolls.jpg",
+            "description": "Basically just cake for breakfast, but who's complaining?",
+            "price": 2.99,
+            "quantity": 1,
+            "totalPrice": 2.99
+          }
+        ]
+      }
+    },
+    {
+      "id": "e1f19650-5a7e-406c-a5ce-e1f694184e8f",
+      "name": "Minh Thu Bui",
+      "email": "mithu170900@gmail.com",
+      "total": 27.133125000000003,
+      "receipt": {
+        "userInfo": {
+          "email": "mithu170900@gmail.com",
+          "name": "Minh Thu Bui"
+        },
+        "lines": [
+          "Showing receipt for Minh Thu Bui available at mithu170900@gmail.com:",
+          "5 total Striped Socks purchased at a cost of $4.99 for a total cost of $24.95.",
+          "Before taxes, the subtotal was $24.95",
+          "After taxes and fees were applied, the total comes out to $27.13"
+        ],
+        "productRows": [
+          {
+            "id": 7,
+            "name": "Striped Socks",
+            "category": "clothing",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Bulk_tube_socks.png",
+            "source": "https://commons.wikimedia.org/wiki/File:Bulk_tube_socks.png",
+            "description": "Because the dryer ate most of your socks and it never hurts to have another clean pair.",
+            "price": 4.99,
+            "quantity": 5,
+            "totalPrice": 24.950000000000003
+          }
+        ]
+      }
+    },
+    {
+      "id": "fc1f7432-7cb8-453f-98f9-6ec962d74b81",
+      "name": "Barack Obama",
+      "email": "b.obama@gmail.com",
+      "total": 9.493875000000001,
+      "receipt": {
+        "userInfo": {
+          "email": "b.obama@gmail.com",
+          "name": "Barack Obama"
+        },
+        "lines": [
+          "Showing receipt for Barack Obama available at b.obama@gmail.com:",
+          "1 total Rice Krispies purchased at a cost of $0.99 for a total cost of $0.99.",
+          "1 total Flamin Hot Cheetos purchased at a cost of $1.50 for a total cost of $1.50.",
+          "1 total Cinnamon Rolls purchased at a cost of $2.99 for a total cost of $2.99.",
+          "1 total Coconut Water purchased at a cost of $3.25 for a total cost of $3.25.",
+          "Before taxes, the subtotal was $8.73",
+          "After taxes and fees were applied, the total comes out to $9.49"
+        ],
+        "productRows": [
+          {
+            "id": 1,
+            "name": "Rice Krispies",
+            "category": "food",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/RKTsquares.jpg",
+            "source": "https://en.wikipedia.org/wiki/Rice_Krispies_Treats",
+            "description": "Delicious corn-based rice grains melted together with marshmallows into a square-like shape.",
+            "price": 0.99,
+            "quantity": 1,
+            "totalPrice": 0.99
+          },
+          {
+            "id": 2,
+            "name": "Flamin Hot Cheetos",
+            "category": "food",
+            "image": "https://static.openfoodfacts.org/images/products/896/400/009/0879/front_en.14.full.jpg",
+            "source": "https://world.openfoodfacts.org/cgi/product_image.pl?code=8964000090879&id=front_en",
+            "description": "No one knows what's in the powder that covers these snacks, but wow is it amazing!",
+            "price": 1.5,
+            "quantity": 1,
+            "totalPrice": 1.5
+          },
+          {
+            "id": 3,
+            "name": "Cinnamon Rolls",
+            "category": "food",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Johns_Inc_Cinnamon_Rolls.jpg",
+            "source": "https://en.wikipedia.org/wiki/File:Johns_Inc_Cinnamon_Rolls.jpg",
+            "description": "Basically just cake for breakfast, but who's complaining?",
+            "price": 2.99,
+            "quantity": 1,
+            "totalPrice": 2.99
+          },
+          {
+            "id": 4,
+            "name": "Coconut Water",
+            "category": "food",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Coconut_Drink%2C_Pangandaran.JPG",
+            "source": "https://en.wikipedia.org/wiki/File:ONE_Pure_Coconut_Water.jpeg",
+            "description": "Somehow incredibly hydrating, while also not really being water.",
+            "price": 3.25,
+            "quantity": 1,
+            "totalPrice": 3.25
+          }
+        ]
+      }
+    },
+    {
+      "id": "5b487fb1-0ca8-4e52-8eff-33ca4f2e9513",
+      "name": "asdasd",
+      "email": "dsadas@gmail.com",
+      "total": 25.2735,
+      "receipt": {
+        "userInfo": {
+          "email": "dsadas@gmail.com",
+          "name": "asdasd"
+        },
+        "lines": [
+          "Showing receipt for asdasd available at dsadas@gmail.com:",
+          "1 total Coconut Water purchased at a cost of $3.25 for a total cost of $3.25.",
+          "1 total Knitted Beanie purchased at a cost of $19.99 for a total cost of $19.99.",
+          "Before taxes, the subtotal was $23.24",
+          "After taxes and fees were applied, the total comes out to $25.27"
+        ],
+        "productRows": [
+          {
+            "id": 4,
+            "name": "Coconut Water",
+            "category": "food",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Coconut_Drink%2C_Pangandaran.JPG",
+            "source": "https://en.wikipedia.org/wiki/File:ONE_Pure_Coconut_Water.jpeg",
+            "description": "Somehow incredibly hydrating, while also not really being water.",
+            "price": 3.25,
+            "quantity": 1,
+            "totalPrice": 3.25
+          },
+          {
+            "id": 8,
+            "name": "Knitted Beanie",
+            "category": "clothing",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Blue_knit-cap_beanie_by_RobertLender.jpeg",
+            "source": "https://commons.wikimedia.org/wiki/File:Blue_knit-cap_beanie_by_RobertLender.jpeg",
+            "description": "Keeps your head absurdly warm while the rest of your body freezes.",
+            "price": 19.99,
+            "quantity": 1,
+            "totalPrice": 19.99
+          }
+        ]
+      }
+    },
+    {
+      "id": "f1e22db2-f8d0-4140-9dad-977765e37722",
+      "name": "dasdasdasdsa",
+      "email": "dka@gmail.com",
+      "total": 108.69562499999999,
+      "receipt": {
+        "userInfo": {
+          "email": "dka@gmail.com",
+          "name": "dasdasdasdsa"
+        },
+        "lines": [
+          "Showing receipt for dasdasdasdsa available at dka@gmail.com:",
+          "5 total Bar Code Shirts purchased at a cost of $19.99 for a total cost of $99.95.",
+          "Before taxes, the subtotal was $99.95",
+          "After taxes and fees were applied, the total comes out to $108.70"
+        ],
+        "productRows": [
+          {
+            "id": 6,
+            "name": "Bar Code Shirts",
+            "category": "clothing",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Barcode_wikipedia_shirt.svg",
+            "source": "https://commons.wikimedia.org/wiki/File:Barcode_wikipedia_shirt.svg",
+            "description": "So you can scan yourself in the checkout aisle.",
+            "price": 19.99,
+            "quantity": 5,
+            "totalPrice": 99.94999999999999
+          }
+        ]
+      }
+    },
+    {
+      "id": "7c5e57a8-daf0-4ba5-ad69-1f1bab978a04",
+      "name": "dkqjpaskl",
+      "email": "dmalojioad@gmail.com",
+      "total": 65.217375,
+      "receipt": {
+        "userInfo": {
+          "email": "dmalojioad@gmail.com",
+          "name": "dkqjpaskl"
+        },
+        "lines": [
+          "Showing receipt for dkqjpaskl available at dmalojioad@gmail.com:",
+          "3 total Knitted Beanie purchased at a cost of $19.99 for a total cost of $59.97.",
+          "Before taxes, the subtotal was $59.97",
+          "After taxes and fees were applied, the total comes out to $65.22"
+        ],
+        "productRows": [
+          {
+            "id": 8,
+            "name": "Knitted Beanie",
+            "category": "clothing",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Blue_knit-cap_beanie_by_RobertLender.jpeg",
+            "source": "https://commons.wikimedia.org/wiki/File:Blue_knit-cap_beanie_by_RobertLender.jpeg",
+            "description": "Keeps your head absurdly warm while the rest of your body freezes.",
+            "price": 19.99,
+            "quantity": 3,
+            "totalPrice": 59.97
+          }
+        ]
+      }
+    },
+    {
+      "id": "a9c2c5fc-3ad1-458d-b14e-d27c58918efc",
+      "name": "dasdas",
+      "email": "dsadsadsad",
+      "total": 6.50325,
+      "receipt": {
+        "userInfo": {
+          "email": "dsadsadsad",
+          "name": "dasdas"
+        },
+        "lines": [
+          "Showing receipt for dasdas available at dsadsadsad:",
+          "2 total Cinnamon Rolls purchased at a cost of $2.99 for a total cost of $5.98.",
+          "Before taxes, the subtotal was $5.98",
+          "After taxes and fees were applied, the total comes out to $6.50"
+        ],
+        "productRows": [
+          {
+            "id": 3,
+            "name": "Cinnamon Rolls",
+            "category": "food",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Johns_Inc_Cinnamon_Rolls.jpg",
+            "source": "https://en.wikipedia.org/wiki/File:Johns_Inc_Cinnamon_Rolls.jpg",
+            "description": "Basically just cake for breakfast, but who's complaining?",
+            "price": 2.99,
+            "quantity": 2,
+            "totalPrice": 5.98
+          }
+        ]
+      }
+    },
+    {
+      "id": "2d852474-518e-46ac-ad8f-b4ba915d6f53",
+      "name": "dsadasd",
+      "email": "dasdasd@dsadsa.com",
+      "total": 21.706500000000002,
+      "receipt": {
+        "userInfo": {
+          "email": "dasdasd@dsadsa.com",
+          "name": "dsadasd"
+        },
+        "lines": [
+          "Showing receipt for dsadasd available at dasdasd@dsadsa.com:",
+          "4 total Striped Socks purchased at a cost of $4.99 for a total cost of $19.96.",
+          "Before taxes, the subtotal was $19.96",
+          "After taxes and fees were applied, the total comes out to $21.71"
+        ],
+        "productRows": [
+          {
+            "id": 7,
+            "name": "Striped Socks",
+            "category": "clothing",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Bulk_tube_socks.png",
+            "source": "https://commons.wikimedia.org/wiki/File:Bulk_tube_socks.png",
+            "description": "Because the dryer ate most of your socks and it never hurts to have another clean pair.",
+            "price": 4.99,
+            "quantity": 4,
+            "totalPrice": 19.96
+          }
+        ]
+      }
+    }
+  ]
 }

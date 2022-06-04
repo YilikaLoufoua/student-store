@@ -1,22 +1,9 @@
 import React from "react";
 import "./Content.css";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import Product from "../Product/Product";
 export default function Content({ products, addCart, removeCart }) {
   return (
     <div class="wrapp">
-      <div class="poster">
-        <div class="text">
-          <h1 class="title">Welcome! Find Your Merch!</h1>
-          <p class="sub">
-            We have all kinds of goodies. Click on any of the items to start
-            filling up your shopping cart. Checkout whenever you're ready.
-          </p>
-        </div>
-      </div>
       <h1>Best Selling Products</h1>
       <br />
       <div id="products">

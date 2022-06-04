@@ -64,6 +64,15 @@ export default function Subnav({ active, setActive, setOpen }) {
   }
   return (
     <div class="wrap">
+      <div class="poster">
+        <div class="text">
+          <h1 class="title">Welcome! Find Your Merch!</h1>
+          <p class="sub">
+            We have all kinds of goodies. Click on any of the items to start
+            filling up your shopping cart. Checkout whenever you're ready.
+          </p>
+        </div>
+      </div>
       <div class="row">
         <div class="searchbar">
           <input id="search" placeholder="Search..." />
