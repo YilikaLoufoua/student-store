@@ -49,7 +49,7 @@ function Mainpage() {
 
   async function getData() {
     setLoading(true);
-    axios.get("http://localhost:3001/store/products").then((data) => {
+    axios.get(`${process.env.REACT_APP_REMOTE_HOST_URL}/store/products`).then((data) => {
       setAllProducts(data.data.products);
       setProducts(data.data.products);
     });

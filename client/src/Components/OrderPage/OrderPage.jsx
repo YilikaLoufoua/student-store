@@ -36,7 +36,7 @@ export default function OrderPage() {
 
   async function getData() {
     setLoading(true);
-    axios.get("http://localhost:3001/store/orders").then((data) => {
+    axios.get(`${process.env.REACT_APP_REMOTE_HOST_URL}/store/orders`).then((data) => {
       setOrders(data.data.orders);
     });
   }

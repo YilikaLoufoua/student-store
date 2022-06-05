@@ -24,7 +24,7 @@ export default function OrderDetail() {
   useEffect(() => {
     async function getData() {
       setLoading(true);
-      let order = await axios.get("http://localhost:3001/store/orders/" + params.id);
+      let order = await axios.get(`${process.env.REACT_APP_REMOTE_HOST_URL}/store/orders/` + params.id);
       setOrder(order.data.order);
     }
 
